@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  🚧 <strong>Early development</strong> · <a href="#">Live demo</a> (soon) · <a href="README.pt-BR.md">Português</a>
+  🚧 <strong>Early development</strong> · Live demo coming soon
 </p>
 
 ---
@@ -30,6 +30,7 @@ only the pieces you actually use.
 ## Roadmap
 
 - [ ] Core: plugin system & host app
+- [ ] Plugin SDK
 - [ ] 💰 Finance (first official plugin)
 - [ ] 📅 Calendar
 - [ ] 📝 Notes
@@ -38,20 +39,39 @@ only the pieces you actually use.
 
 ## Tech stack
 
-<!-- preencher quando definido -->
+- **Monorepo:** Turborepo + pnpm workspaces
+- **Language:** TypeScript (strict)
+- **Demo database:** PGlite (Postgres running in the browser)
 
-## Getting started
+More to come as the core takes shape.
 
-> Not ready yet — follow the repo to get notified when the first release lands.
+## Project structure
+
+```
+apps/       host applications (web app, demo)
+packages/   core, plugin SDK and shared config
+plugins/    official plugins — each one a tessera
+```
+
+## Development
+
+Requires Node.js 20+.
+
+```bash
+corepack enable   # on Node 25+, run `npm install -g corepack` first
+pnpm install
+pnpm build
+```
 
 ## Contributing
 
-The project is in its early design phase. Ideas and discussions are welcome in Issues.
+The project is in its early design phase. Ideas and discussions are welcome in
+[Issues](https://github.com/juliosulato/tessera/issues).
 
 ## License
 
 Copyright (C) 2026 Julio Cesar Sulato Filho
 
 Tessera is licensed under the [GNU AGPL v3.0](LICENSE.md) (`AGPL-3.0-only`).
-The plugin SDK (`packages/plugin-sdk`) is licensed under MIT, so plugins
-can use any license their authors choose.
+The plugin SDK (`packages/plugin-sdk`, coming soon) will be licensed under MIT,
+so plugins can use any license their authors choose.
