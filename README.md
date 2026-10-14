@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/logo.svg" width="120" alt="Tessera logo" />
+  <img src="docs/assets/logo.svg" height="60" alt="Tessera logo" />
 </p>
 
 <h1 align="center">Tessera</h1>
