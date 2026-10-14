@@ -72,6 +72,6 @@ The project is in its early design phase. Ideas and discussions are welcome in
 
 Copyright (C) 2026 Julio Cesar Sulato Filho
 
-Tessera is licensed under the [GNU AGPL v3.0](LICENSE.md) (`AGPL-3.0-only`).
+Tessera is licensed under the [GNU AGPL v3.0](LICENSE) (`AGPL-3.0-only`).
 The plugin SDK (`packages/plugin-sdk`, coming soon) will be licensed under MIT,
 so plugins can use any license their authors choose.
